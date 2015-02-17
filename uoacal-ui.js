@@ -121,7 +121,7 @@ function uoaCalendar(element, options) {
 				calendar.fullCalendar('renderEvent', data, true /*make the event "stick" */);
 			},
 			function(res, data) {
-				console.error("Failed to add event");
+				alert("Failed to add event");
 			}
 		);
 
@@ -182,7 +182,7 @@ function uoaCalendar(element, options) {
 				calendar.fullCalendar('updateEvent', event);
 			},
 			function(res, data) {
-				console.error("Failed to update event");
+				alert("Failed to update event");
 			}
 		);
 
@@ -202,7 +202,7 @@ function uoaCalendar(element, options) {
 				calendar.fullCalendar('removeEvents',event._id);
 			},
 			function(res, data) {
-				console.error("Failed to delete event");
+				alert("Failed to delete event");
 			}
 		);
 
@@ -256,7 +256,7 @@ function uoaCalendar(element, options) {
 				calendar.fullCalendar('updateEvent', event);
 			},
 			function(res, data) {
-				console.error("Failed to update event");
+				alert("Failed to update event");
 				revertFunc();
 			}
 		);
