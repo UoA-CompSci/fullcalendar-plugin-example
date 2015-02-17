@@ -34,7 +34,7 @@ http://sitcalprd01.its.auckland.ac.nz/calendars/
 
 And to list all events in a given calendar, visit:
 
-http://sitcalprd01.its.auckland.ac.nz/calendars/<calendar_ID>/events/
+http://sitcalprd01.its.auckland.ac.nz/calendars/_____calendar_ID_____/events/
 
 Finally, you can find the API of the backend at:
 
