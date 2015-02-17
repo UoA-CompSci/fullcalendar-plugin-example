@@ -308,9 +308,9 @@ function uoaCalendar(element, options) {
 
 	var clientOptions = {};
 
-	if(sOptions.uoaCalendarHost) clientOptions.host = sOptions.uoaCalendarHost;
-	if(sOptions.uoaCalendarPort) clientOptions.port = sOptions.uoaCalendarPort;
-	if(sOptions.uoaCalendarApiToken) clientOptions.apiToken = sOptions.uoaCalendarApiToken;
+	if(options.uoaCalendarHost) clientOptions.host = options.uoaCalendarHost;
+	if(options.uoaCalendarPort) clientOptions.port = options.uoaCalendarPort;
+	if(options.uoaCalendarApiToken) clientOptions.apiToken = options.uoaCalendarApiToken;
 
 	var client = new UoACalendarClient(clientOptions);
 }
