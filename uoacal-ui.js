@@ -108,7 +108,7 @@ function uoaCalendar(element, options) {
 		msg['todo'] = $('#todo:checked').val() ? true : false;
 		msg['allDay'] = $('#allDay:checked').val() ? true : false;
 
-		if ($.inArray("start", stdFields) && msg['start']) {
+		if ($.inArray("start", stdFields)) {
 			if ('' == msg['start']) {
 				delete msg['start'];
 			} else {
@@ -116,7 +116,7 @@ function uoaCalendar(element, options) {
 			}
 		}
 
-		if ($.inArray("end", stdFields) && msg['end']) {
+		if ($.inArray("end", stdFields)) {
 			if ('' == msg['end']) {
 				delete msg['end'];
 			} else {
@@ -174,7 +174,7 @@ function uoaCalendar(element, options) {
 		msg['todo'] = $('#edit-todo:checked').val() ? true : false;
 		msg['allDay'] = $('#edit-allDay:checked').val() ? true : false;
 
-		if ($.inArray("start", stdFields) && msg['start']) {
+		if ($.inArray("start", stdFields)) {
 			if ('' == msg['start']) {
 				delete msg['start'];
 			} else {
@@ -182,7 +182,7 @@ function uoaCalendar(element, options) {
 			}
 		}
 
-		if ($.inArray("end", stdFields) && msg['end']) {
+		if ($.inArray("end", stdFields)) {
 			if ('' == msg['end']) {
 				delete msg['end'];
 			} else {
