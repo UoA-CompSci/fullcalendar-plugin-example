@@ -108,11 +108,11 @@ function uoaCalendar(element, options) {
 		msg['todo'] = $('#todo:checked').val() ? true : false;
 		msg['allDay'] = $('#allDay:checked').val() ? true : false;
 
-		if ($.inArray("start", stdFields)) {
+		if ($.inArray("start", stdFields) && '' != msg['start']) {
 			msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
 		}
 
-		if ($.inArray("end", stdFields)) {
+		if ($.inArray("end", stdFields) && '' != msg['end']) {
 			msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
 		}
 		console.log(msg);
@@ -167,11 +167,11 @@ function uoaCalendar(element, options) {
 		msg['allDay'] = $('#edit-allDay:checked').val() ? true : false;
 
 
-		if ($.inArray("start", stdFields)) {
+		if ($.inArray("start", stdFields) && '' != msg['start']) {
 			msg['start'] = $.fullCalendar.moment.utc(msg['start'], 'DD.MM.YYYY HH:mm').format();
 		}
 
-		if ($.inArray("end", stdFields)) {
+		if ($.inArray("end", stdFields) && '' != msg['end']) {
 			msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
 		}
 
