@@ -108,12 +108,20 @@ function uoaCalendar(element, options) {
 		msg['todo'] = $('#todo:checked').val() ? true : false;
 		msg['allDay'] = $('#allDay:checked').val() ? true : false;
 
-		if ($.inArray("start", stdFields) && '' != msg['start']) {
-			msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
+		if ($.inArray("start", stdFields) && msg['start']) {
+			if ('' == msg['start']) {
+				delete msg['start'];
+			} else {
+				msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
+			}
 		}
 
-		if ($.inArray("end", stdFields) && '' != msg['end']) {
-			msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
+		if ($.inArray("end", stdFields) && msg['end']) {
+			if ('' == msg['end']) {
+				delete msg['end'];
+			} else {
+				msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
+			}
 		}
 		console.log(msg);
 		client.addEvent(events.uoaCalendarId, msg,
@@ -166,13 +174,20 @@ function uoaCalendar(element, options) {
 		msg['todo'] = $('#edit-todo:checked').val() ? true : false;
 		msg['allDay'] = $('#edit-allDay:checked').val() ? true : false;
 
-
-		if ($.inArray("start", stdFields) && '' != msg['start']) {
-			msg['start'] = $.fullCalendar.moment.utc(msg['start'], 'DD.MM.YYYY HH:mm').format();
+		if ($.inArray("start", stdFields) && msg['start']) {
+			if ('' == msg['start']) {
+				delete msg['start'];
+			} else {
+				msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
+			}
 		}
 
-		if ($.inArray("end", stdFields) && '' != msg['end']) {
-			msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
+		if ($.inArray("end", stdFields) && msg['end']) {
+			if ('' == msg['end']) {
+				delete msg['end'];
+			} else {
+				msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
+			}
 		}
 
 		$.extend(event, msg);
