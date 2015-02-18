@@ -56,6 +56,8 @@ Then you need to install bower by running:
 $ npm install -g bower
 ```
 
+You also need to install git, which can be downloaded at http://git-scm.com 
+
 Now you can change directory to your site, and install the **fullcalendar-uoa-ui** module, which will automatically pull all its dependencies:
 
 ```bash
