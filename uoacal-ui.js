@@ -273,6 +273,11 @@ function uoaCalendar(element, options) {
 
 		data.start = event.start.format();
 		data.end = (null==event.end)?null:event.end.format();
+		if (null == event.end) {
+			delete event.end;
+			delete event._end;
+			delete data.end;
+		}
 
 		client.updateEvent(s.uoaCalendarId, event._id, data,
 			function(res, data) {
