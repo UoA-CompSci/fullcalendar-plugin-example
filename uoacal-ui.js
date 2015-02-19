@@ -272,7 +272,7 @@ function uoaCalendar(element, options) {
 		}
 
 		data.start = event.start.format();
-		data.end = (null==event.end)?null:event.end.format();
+		data.end = (null==event.end)?null:event.end.format("YYYY-MM-DDTHH:mm:ss");
 		if (null == event.end) {
 			delete event.end;
 			delete event._end;
