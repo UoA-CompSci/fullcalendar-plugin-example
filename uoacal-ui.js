@@ -111,6 +111,8 @@ function uoaCalendar(element, options) {
 		if ($.inArray("start", stdFields)) {
 			if ('' == msg['start']) {
 				delete msg['start'];
+				delete event['start'];
+				delete event['_start'];
 			} else {
 				msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
 			}
@@ -119,6 +121,8 @@ function uoaCalendar(element, options) {
 		if ($.inArray("end", stdFields)) {
 			if ('' == msg['end']) {
 				delete msg['end'];
+				delete event['end'];
+				delete event['_end'];
 			} else {
 				msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
 			}
@@ -177,6 +181,8 @@ function uoaCalendar(element, options) {
 		if ($.inArray("start", stdFields)) {
 			if ('' == msg['start']) {
 				delete msg['start'];
+				delete event['start'];
+				delete event['_start'];
 			} else {
 				msg['start'] = $.fullCalendar.moment.utc(msg['start'],'DD.MM.YYYY HH:mm').format();
 			}
@@ -185,6 +191,8 @@ function uoaCalendar(element, options) {
 		if ($.inArray("end", stdFields)) {
 			if ('' == msg['end']) {
 				delete msg['end'];
+				delete event['end'];
+				delete event['_end'];
 			} else {
 				msg['end'] = $.fullCalendar.moment.utc(msg['end'],'DD.MM.YYYY HH:mm').format();
 			}
