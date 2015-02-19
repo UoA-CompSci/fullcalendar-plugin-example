@@ -271,7 +271,7 @@ function uoaCalendar(element, options) {
 			data[stdFields[builtinField]] = event[stdFields[builtinField]];
 		}
 
-		data.start = event.start.format();
+		data.start = event.start.format("YYYY-MM-DDTHH:mm:ss");
 		data.end = (null==event.end)?null:event.end.format("YYYY-MM-DDTHH:mm:ss");
 		if (null == event.end) {
 			delete event.end;
