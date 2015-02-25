@@ -40,32 +40,25 @@ Finally, you can find the API of the backend at:
 
 http://sitcalprd01.its.auckland.ac.nz/docs/
 
+After getting your API key and calendar ID, you can start working on your website.
+
 
 Setting up a calendar in your website
 -------------------------------------
 
-After getting your API key and calendar ID, you can start working on your website.
+First, download the zipfile at:
  
-First, you need to download and install node.js at:
+https://github.com/UoA-CompSci/fullcalendar-uoa-ui/blob/master/scripts.zip
 
-http://nodejs.org/
+Then in the Windows Explorer, or a similar file manager, move the file to the directory containing your HTML code, and double click the file.  Then unzip the file into the directory containing the HTML code.
 
-Then you need to install bower by running:
+You will also find **example.html**, which shows you how to use the basic functions of the calendar.
 
-```bash
-$ npm install -g bower
-```
+Now you can follow the instructions at:
 
-You also need to install git, which can be downloaded at http://git-scm.com 
+https://github.com/UoA-CompSci/fullcalendar-uoa-ui/blob/master/README.md
 
-Now you can change directory to your site, and install the **fullcalendar-uoa-ui** module, which will automatically pull all its dependencies:
-
-```bash
-$ bower install fullcalendar-uoa-ui
-```
-
-All modules will reside in **bower_components** folder.  Now you can follow the instructions at **bower_components/fullcalendar-uoa-ui/README.md** to
-get your calendar working on the website.
+to get your calendar working on the website.
 
 If you want to modify the calendar or add functionality, you can consult the **fullcalendar** API:
 
