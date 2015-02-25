@@ -48,7 +48,7 @@ Setting up a calendar in your website
 
 First, download the zipfile at:
  
-https://github.com/UoA-CompSci/fullcalendar-uoa-ui/blob/master/scripts.zip
+https://github.com/UoA-CompSci/fullcalendar-uoa-ui/raw/master/scripts.zip
 
 Then in the Windows Explorer, or a similar file manager, move the file to the directory containing your HTML code, and double click the file.  Then unzip the file into the directory containing the HTML code.
 
