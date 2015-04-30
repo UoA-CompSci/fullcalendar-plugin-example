@@ -130,7 +130,7 @@ function uoaCalendar(element, options) {
 		console.log(msg);
 		client.addEvent(events.uoaCalendarId, msg,
 			function(res, data) {
-				calendar.fullCalendar('renderEvent', data, true /*make the event "stick" */);
+				calendar.fullCalendar('renderEvent', data);
 			},
 			function(res, data) {
 				alert("Failed to add event");
