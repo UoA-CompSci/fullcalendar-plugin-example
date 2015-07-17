@@ -34,7 +34,8 @@ http://sitcalprd01.its.auckland.ac.nz/calendars/
 
 And to list all events in a given calendar, visit:
 
-http://sitcalprd01.its.auckland.ac.nz/calendars/_____calendar_ID_____/events/
+    http://sitcalprd01.its.auckland.ac.nz/calendars/   _____calendar_ID _____/events/
+    eg http://sitcalprd01.its.auckland.ac.nz/calendars/20/events/
 
 Finally, you can find the API of the backend at:
 
@@ -52,7 +53,7 @@ https://github.com/UoA-CompSci/fullcalendar-uoa-ui/raw/master/scripts.zip
 
 Then in the Windows Explorer, or a similar file manager, move the file to the directory containing your HTML code, and double click the file.  Then unzip the file into the directory containing the HTML code.
 
-You will also find **example.html**, which shows you how to use the basic functions of the calendar.
+You will also find **simple.html**, which shows you how to use the basic functions of the calendar.
 
 Now you can follow the instructions at:
 
