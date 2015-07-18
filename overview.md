@@ -5,7 +5,7 @@ The UoACalendar system consists of a backend, which hosts your calendars, and a 
 To facilitate the implementation of your calendar, we provide the bower javascript module **fullcalendar-uoa-ui**, which has the basic calendar functionality and is ready to go.  
 Alternatively, you can use this module as a template, and implement your own with extra features.  In this case, you can make use of the base libraries **fullcalendar** and **uoacalendar**.
 
-Getting your API key and making new calendars
+Getting your API token and making new calendars
 ---------------------------------------------
 
 First, you need to log into the the backend on your browser:
@@ -14,8 +14,8 @@ http://sitcalprd01.its.auckland.ac.nz
 
 with your UPI and password.
 
-Then on the top right corner of the menu bar, click on your email address, and then click "API Key" in the dropdown menu. 
-You will see your unique API key, which you should use in your website.
+Then on the top right corner of the menu bar, click on your email address, and then click "API Token" in the dropdown menu. 
+You will see your unique API token in a green box (about 100+characters), which you use in your website.  Take a copy of this.
 
 The next step is to create a new calendar.  Click the calendar icon on the top left side of the menu bar, and then click  "+ New calendar" on the dropdown menu.
 Type the name for your new calendar, and click "create".  Then the calendar is created, and you will be switch to this new calendar.
@@ -34,7 +34,8 @@ http://sitcalprd01.its.auckland.ac.nz/calendars/
 
 And to list all events in a given calendar, visit:
 
-http://sitcalprd01.its.auckland.ac.nz/calendars/_____calendar_ID_____/events/
+    http://sitcalprd01.its.auckland.ac.nz/calendars/   _____calendar_ID _____/events/
+    eg http://sitcalprd01.its.auckland.ac.nz/calendars/20/events/
 
 Finally, you can find the API of the backend at:
 
@@ -52,7 +53,7 @@ https://github.com/UoA-CompSci/fullcalendar-uoa-ui/raw/master/scripts.zip
 
 Then in the Windows Explorer, or a similar file manager, move the file to the directory containing your HTML code, and double click the file.  Then unzip the file into the directory containing the HTML code.
 
-You will also find **example.html**, which shows you how to use the basic functions of the calendar.
+You will also find **simple.html**, which shows you how to use the basic functions of the calendar.
 
 Now you can follow the instructions at:
 
