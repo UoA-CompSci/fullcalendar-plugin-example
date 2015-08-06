@@ -12,7 +12,7 @@ function uoaCalendar(element, options) {
 	var uoaCalendarPort = options.uoaCalendarPort;
 	//var url = sourceOptions.url;
 */
-	//var stdFields = ['title', 'description', 'start', 'end', 'allDay', 'url'];
+
 	var stdFields = ['title', 'description', 'location', 'summary', 'start', 'end', 'status', 'reminder', 'todo', 'allDay', 'url'];
 
 	// Create the REST client with the provided options
@@ -45,7 +45,7 @@ function uoaCalendar(element, options) {
 
 		var eventType = options.eventType;
 
-		//if (inarray('title', stdFields) >= 0) {
+
 		for (builtinField in stdFields) {
 			var label = document.createElement("label");
 			label.for = prefix + builtinField;
@@ -62,7 +62,7 @@ function uoaCalendar(element, options) {
 			}
 			input.name = prefix + stdFields[builtinField];
 			input.id = prefix + stdFields[builtinField];
-			//input.class='text ui-widget-content ui-corner-all';
+
 			fieldset.appendChild(input);
 			fieldset.appendChild(document.createElement("br"));
 
@@ -154,7 +154,6 @@ function uoaCalendar(element, options) {
 		},
 		close: function() {
 			form[0].reset();
-			//allFields.removeClass( "ui-state-error" );
 		}
 	});
 
@@ -246,7 +245,6 @@ function uoaCalendar(element, options) {
 		},
 		close: function() {
 			form[0].reset();
-			//allFields.removeClass( "ui-state-error" );
 		}
 	});
 
@@ -302,8 +300,6 @@ function uoaCalendar(element, options) {
 				$("#edit-" + stdFields[builtinField]).val(event[stdFields[builtinField]]);
 			}
 
-			//$( "#edit-title" ).val(event.title);
-			//$( "#edit-url" ).val(event.url);
 
 			event["todo"] ? $('#edit-todo').prop('checked', true) : $('#edit-todo').prop('checked', false);
 			event["allDay"] ? $('#edit-allDay').prop('checked', true) : $('#edit-allDay').prop('checked', false);
