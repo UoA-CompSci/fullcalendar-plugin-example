@@ -42,7 +42,7 @@ It's time to initialize your calendar in JavaScript. You can do so as in this ex
             events: {
                 uoaCalendarId: '<YOUR CALENDAR ID>',
                 uoaCalendarApiToken: '<YOUR API TOKEN>',
-                uoaCalendarHost: 'sitcalprd01.its.auckland.ac.nz',
+                uoaCalendarHost: 'diaryapi.auckland.ac.nz',
                 uoaCalendarPort: '345'
             },
             header: {

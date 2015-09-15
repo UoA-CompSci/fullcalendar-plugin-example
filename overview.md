@@ -10,7 +10,7 @@ Getting your API token and making new calendars
 
 First, you need to log into the the backend on your browser:
 
-http://sitcalprd01.its.auckland.ac.nz
+http://diaryapi.auckland.ac.nz
 
 with your UPI and password.
 
@@ -22,7 +22,7 @@ Type the name for your new calendar, and click "create".  Then the calendar is c
 
 On the url field of your web browser, a link to your calendar will be displayed, such as:
 
-http://sitcalprd01.its.auckland.ac.nz/?calendar=20
+http://diaryapi.auckland.ac.nz/?calendar=20
 
 In the above case, the value of calendar is 20, which is the calendar ID for your new calendar.  Write it down, as you need to specify it in your website.
 
@@ -30,16 +30,16 @@ In the calendar dropdown menu, you can also switch to a different calendar or de
 
 To list all calendars you have, visit:
 
-http://sitcalprd01.its.auckland.ac.nz/calendars/
+http://diaryapi.auckland.ac.nz/calendars/
 
 And to list all events in a given calendar, visit:
 
-    http://sitcalprd01.its.auckland.ac.nz/calendars/   _____calendar_ID _____/events/
-    eg http://sitcalprd01.its.auckland.ac.nz/calendars/20/events/
+    http://diaryapi.auckland.ac.nz/calendars/   _____calendar_ID _____/events/
+    eg http://diaryapi.auckland.ac.nz/calendars/20/events/
 
 Finally, you can find the API of the backend at:
 
-http://sitcalprd01.its.auckland.ac.nz/docs/
+http://diaryapi.auckland.ac.nz/docs/
 
 After getting your API key and calendar ID, you can start working on your website.
 
