@@ -57,11 +57,8 @@ It's time to initialize your calendar in JavaScript. You can do so as in this ex
 The UoA Calendar can be installed by calling the **uoaCalender(<ELEMENT>, <OPTIONS>)** function.  The first parameter **<ELEMENT>** represents
 the ID of the HTML element the calendar belong to; the second parameter **<OPTIONS>** is an object that contains all the options.
 
-The API token needs to be specified in the option **uoaCalendarApiToken**, which can be obtained by:
+The API token needs to be specified in the option **uoaCalendarApiToken**, which can be obtained by logging into diaryapi.auckland.ac.nz then click your email address and select "API Token" from the menu. (TODO: screenshot)
 
-```bash
-$ curl -X POST -d "username=<USERNAME>&password=<PASSWORD>" calendar.auckland.ac.nz:5000/api-token-auth
-```
 
 >> Note that this will generate a new token and invalidate your old one if you already have one.
 
