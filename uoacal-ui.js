@@ -338,4 +338,6 @@ function uoaCalendar(element, options) {
 	if(options.events.uoaCalendarApiToken) clientOptions.apiToken = options.events.uoaCalendarApiToken;
 
 	var client = new UoACalendarClient(clientOptions);
+	
+	return client;
 }
