@@ -43,6 +43,8 @@ http://diaryapi.auckland.ac.nz/docs/
 
 After getting your API key and calendar ID, you can start working on your website.
 
+> Like all single sign-on (SSO) sites, after you finish using the diaryapi website, please close all browser windows to completely log out of the diaryapi site.
+
 
 Setting up a calendar in your website
 -------------------------------------
